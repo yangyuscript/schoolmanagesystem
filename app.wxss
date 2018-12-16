@@ -1,0 +1,8 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+input{
+  border:1px solid #92319A;
+}
+text{
+  color:#92319A;
+}

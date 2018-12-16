@@ -1,0 +1,21 @@
+<!--课程管理——>课程信息查询——>每一条条目点击后进入的课程详细信息-->
+
+<import src='../../components/comment/comment.wxml'/>
+<view class='wrap'>
+  <view class='store'>
+    <view class='info'>
+      <view class='name'>{{classname}}</view>
+      <view class='type_km' bindtap='callPhone'>
+    {{classteacher}}：{{phone}}
+  </view>
+    </view>
+  </view>
+  <view class='comments'>
+    <view class='conut'>课程描述</view>
+      <view class='comment'>
+        <view class='info'>
+          <view class='msg'>{{comments}}</view>
+        </view>
+      </view>
+  </view>
+</view>

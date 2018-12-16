@@ -1,0 +1,24 @@
+<!--登陆界面-->
+
+<view class="container" style="height:100%;background-color:white;">
+  <image src="/images/logo.png" style="width:80%;height:16%;margin-left:10px;margin-top:20px;"></image>
+  <view class="" style="padding:5%;margin-top:-51px;">
+    <view class="usermotto">
+      <view class="cp-input">
+        <view>
+          <image src="/images/sno.png" class="loginicon" style="float:left"></image>
+          <input type="text" bindinput="studentID" placeholder="请输入学号" />
+        </view>
+        <view>
+          <image src="/images/pasw.png" class="loginicon" style="float:left"></image>
+          <input type="text" bindinput="classID" password="true" placeholder="请输入密码" />
+        </view>
+        <button bindtap="login" style='background-color:#92319A'>登 录</button>
+        <view style="margin-top:25px;margin-bottom:25px;font-size:10px;float:right;">
+          <text bindtap="regist">注册账号 </text>
+          <text bindtap="forget"> 忘记密码？</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

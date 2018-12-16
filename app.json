@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/works/works",
+    "pages/personal-info/personal-info",
+    "pages/kechengsheji/kechengsheji",
+    "pages/kechengshejidetail/kechengshejidetail",
+    "pages/news/news",
+    "pages/makenew/makenew",
+    "pages/newsdetail/newsdetail",
+    "pages/newsreview/newsreview",
+    "pages/keshe/keshe",
+    "pages/changePwd/changePwd",
+    "pages/bookorder/bookorder",
+    "pages/storeprogram/storeprogram",
+    "pages/callphone/callphone",
+    "pages/storelist/storelist",
+    "pages/store/store",
+    "pages/bookorderdetail/bookorderdetail",
+    "pages/keshe1/keshe1",
+    "pages/findpsw/findpsw",
+    "pages/bishedetail/bishedetail",
+    "pages/tprogramme/tprogramme",
+    "pages/kechenhistory/kechenhistory",
+    "pages/tclassschedule/tclassschedule",
+    "pages/bishe/bishe",
+    "pages/regist/regist",
+    "pages/courseTable/courseTable",
+    "pages/notice/notice"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#92319A",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "学院教务处",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

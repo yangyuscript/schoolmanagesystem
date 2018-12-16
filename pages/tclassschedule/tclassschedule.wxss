@@ -1,0 +1,93 @@
+@import '../../components/storeitem/storeitem.wxss';
+page{
+    background-color: #f0f0f0;
+}
+
+.navbtns{
+    display: flex;
+    height: 80rpx;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.navbtns .navitem{
+    flex: 1;
+    text-align: center;
+    color: #777777;
+    font-size: 26rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.navbtns .navitem image{
+    display: inline-block;
+    width: 26rpx;
+    height: 26rpx;
+    margin-left: 6rpx;
+    vertical-align: middle;
+}
+
+.navbtns .line{
+width: 3rpx;
+background-color: #aaaaaa;
+height: 45rpx;
+flex-shrink: 0;
+}
+
+.wrap{
+    position: relative;
+    background-color:#ffffff;
+}
+
+.wrap .spinner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.wrap .spinner .items{
+    background-color: #fff;
+    padding-left: 20rpx;
+}
+
+.wrap .spinner .items .item{
+   padding-left: 25rpx;
+border-bottom: 1rpx solid #777777;
+height: 90rpx;
+line-height: 90rpx;
+color: #333;
+font-size: 30rpx;
+
+}
+
+
+.class-link {
+  padding: 0 15px;
+  padding-left: 0px;
+  margin-left: 10px;
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.class_description{
+  padding-left: 3rpx;
+  padding-top: 3rpx;
+}
+
+.course_description {
+  font-style: italic;
+  font-size: 35rpx;
+  color: #FF0000;
+}
+
+.scroller{
+    margin-top: 15rpx;
+}

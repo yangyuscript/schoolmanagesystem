@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="classname">
+    <picker placeholder="专业" bindchange="depart" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      专业：{{array[index]}}
+    </view>
+    </picker>
+    <view>1231</view>
+    <view class="classname">
+      <text style="float:left">教师:</text>
+      <input placeholder="老师" bindchange="teacher" />
+    </view>
+    <button bindtap="s">搜索</button>
+  </view>
+  <view class="res">
+    <text>{{result}}</text>
+  </view>
+</view>

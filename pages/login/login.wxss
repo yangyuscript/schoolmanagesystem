@@ -1,0 +1,73 @@
+/**index.wxss**/
+
+page {
+  height: 100%;
+  opacity: 0.9;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.user-motto {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  display: block;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.userinfo-nickname {
+  color: #000000;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+
+.usermotto input {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 10px;
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.usermotto .cp-input {
+  padding: 30px 25px;
+  /**border: 3px solid orange;**/
+}
+
+.usermotto button {
+  top: 20px;
+  font-weight: bold;
+  color: white;
+  background-color:crimson;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+
+.loginbox {
+  background-color: #00CCFF;
+  border: 1px solid #000000;
+}
+
+.loginicon {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}

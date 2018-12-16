@@ -1,0 +1,9 @@
+<!--pages/findpsw/findpsw.wxml-->
+
+<view class="row">
+  <view class="ipt">
+    <input type="text" placeholder="填写邮箱" bindchange="email" />
+  </view>
+</view>
+
+<button type="primary" style='background-color:#92319A;' bindtap="over">找回密码</button>

@@ -1,0 +1,5 @@
+/* pages/seach/seach.wxss */
+.classname3 {
+  border: 1px dolid #00FFCC;
+  background-color: #00CCFF;
+}

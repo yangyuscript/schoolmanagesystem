@@ -1,0 +1,18 @@
+<!--毕业设计搜索之后，点击结果条目，跳转的界面-->
+
+<view class="title">{{bsname}}</view>
+<view>
+    <view class='item'>
+    <block wx:for='{{arr}}' wx:for-item='stnphone' wx:key='*this'>
+    <navigator url="../callphone/callphone?objectId={{stnphone.sphone}}"><label bindtap="call">学生姓名：{{stnphone.sname}}
+        </label></navigator>
+    </block>
+    </view>
+    <view class='item'>
+        <label>毕设日期：{{bsyear}}</label>
+    </view>
+    <view class='item'>
+        <label>基本描述：</label>
+        <view class="contents"><textarea auto-height /> {{bscontents}}</view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<!--点击教材订购页面的搜索结果中的某一条目后，跳转到此页面，展示教材订单，同时也可以做修改-->
+
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+<view class="title">教材订单详情</view>
+<view>
+    <view class='item'>
+        <label>书籍名称：</label>
+        <input value="{{bname}}" name="bookName" />
+    </view>
+    <view class='item'>
+        <label>出 版 社：</label>
+        <input value="{{publish}}" name="publish"/>
+    </view>
+    <view class='item'>
+        <label>作者：</label>
+        <input  value="{{author}}" name="author" />
+    </view>
+    <view class='item'>
+        <label>I S B N：</label>
+        <input value="{{isbn}}" name="isbn" />
+    </view>
+    <view class='item'>
+        <label>价格：</label>
+        <input  value="{{price}}" name="price" />
+    </view>
+</view>
+<view class="btn" wx:if="{{flag=='0'}}">
+    <button formType="submit" >确认</button>
+</view>
+</form>
+
+

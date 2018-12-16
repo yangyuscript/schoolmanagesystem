@@ -1,0 +1,56 @@
+<!--教研室主任登陆后的课程管理主页面，注意：最下面的是毕业设计跳转接口 -->
+
+<view class="row">
+    <navigator url="../storelist/storelist" hover-class="none">
+    <!--此处设置页面跳转-->
+        <view class="text">
+            <image src='../../images/acconut.png'></image>课程信息查询</view>
+        <view class="arrow">
+            <image src="../../images/arrow.png"></image>
+        </view>
+    </navigator>
+</view>
+<view class="row">
+<navigator url="../bookorder/bookorder" hover-class="none">
+    <view class="text">
+        <image src='../../images/company.png'></image>教材订购核实</view>
+    <view class="arrow">
+        <image src="../../images/arrow.png"></image>
+    </view>
+    </navigator>
+</view>
+<view class="row">
+<navigator url="../tprogramme/tprogramme" hover-class="none">
+    <view class="text">
+        <image src='../../images/modify.png'></image>教学大纲</view>
+    <view class="arrow">
+        <image src="../../images/arrow.png"></image>
+    </view>
+    </navigator>
+</view>
+<view class="row">
+<navigator url="../tclassschedule/tclassschedule" hover-class="none">
+    <view class="text">
+        <image src='../../images/feedback.png'></image>个人课表查询</view>
+    <view class="arrow">
+        <image src="../../images/arrow.png"></image>
+    </view>
+    </navigator>
+</view>
+<view class="row">
+<navigator url="../kechenhistory/kechenhistory" hover-class="none">
+    <view class="text">
+        <image src='../../images/rili.png'></image>历年课程安排</view>
+          </navigator>
+          </view>
+   <view class="row">
+    <navigator url="../bishe/bishe" hover-class="none">
+    <!--此处设置页面跳转-->
+        <view class="text">
+            <image src='../../images/acconut.png'></image>毕设管理</view>
+        <view class="arrow">
+            <image src="../../images/arrow.png"></image>
+        </view>
+    </navigator>
+
+</view>

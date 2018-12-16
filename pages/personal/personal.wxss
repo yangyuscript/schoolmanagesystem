@@ -1,0 +1,49 @@
+/* pages/personal/personal.wxss */
+.container1{
+    display: flex;
+    /*垂直*/
+    flex-direction:column;
+/*   居中
+    align-items: center;*/
+    /*font-size: 35rpx;*/
+    font-family: MicroSoft Yahei;
+    font-weight: bold;
+}
+.headImg{
+    width:200rpx;
+    height: 200rpx;
+}
+.container-top{
+    display: flex;
+    flex-direction:row;
+    border-bottom-width: 5rpx;
+    border-bottom-color: black;
+}
+.top1{
+    display: flex;
+    flex-direction:column;
+    margin-left: 50rpx
+}
+.top1-1{
+    margin-top: 50rpx;
+}
+.container-middle{
+    margin-top: 10rpx;
+}
+/*教研室主任布局*/
+.container-bottom0{
+    margin-top: 308rpx;
+    height: 92rpx;
+    display: flex;
+    flex-direction: row;   
+}
+/*教师布局*/
+.container-bottom1{
+    margin-top: 490rpx;
+    height: 92rpx;
+    display: flex;
+    flex-direction: row;   
+}
+.button{
+    width: 375rpx;
+}

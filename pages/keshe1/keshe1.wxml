@@ -1,0 +1,40 @@
+<!--普通教师打开课程设计的主界面，比主任少了一个搜索历史代课信息的界面-->
+
+
+
+<view class="row">
+    <navigator url="../storelist/storelist" hover-class="none">
+        <view class="text">
+            <image src='../../images/acconut.png'></image>课程信息查询</view>
+        <view class="arrow">
+            <image src="../../images/arrow.png"></image>
+        </view>
+    </navigator>
+</view>
+<view class="row">
+<navigator url="../bookorder/bookorder" hover-class="none">
+    <view class="text">
+        <image src='../../images/company.png'></image>教材订购核实</view>
+    <view class="arrow">
+        <image src="../../images/arrow.png"></image>
+    </view>
+    </navigator>
+</view>
+<view class="row">
+<navigator url="../tprogramme/tprogramme" hover-class="none">
+    <view class="text">
+        <image src='../../images/modify.png'></image>教学大纲</view>
+    <view class="arrow">
+        <image src="../../images/arrow.png"></image>
+    </view>
+    </navigator>
+</view>
+<view class="row">
+<navigator url="../tclassschedule/tclassschedule" hover-class="none">
+    <view class="text">
+        <image src='../../images/feedback.png'></image>个人课表查询</view>
+    <view class="arrow">
+        <image src="../../images/arrow.png"></image>
+    </view>
+    </navigator>
+</view>

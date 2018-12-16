@@ -1,0 +1,8 @@
+<!--修改密码的界面-->
+
+
+<view class="row"><view class="text"> 新密码 </view> <view class="ipt"><input type="text" placeholder="填写新密码" 
+bindinput="newtPassword" password="true"/></view></view>
+<view class="row"><view class="text"> 确认密码 </view> <view class="ipt"><input type="text" placeholder="再次填写确认"
+bindinput="newtPassword1" password="true"/></view></view>
+<button type="primary" bindtap="over" >完成</button>

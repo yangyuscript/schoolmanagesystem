@@ -1,0 +1,19 @@
+
+<!--新闻发布页面-->
+<view class="classname">
+  <view class="title">
+    <text>发布公告</text>
+    <view class="horizon"></view>
+  </view>
+  <form bindsubmit="submit">
+  <view class="titlecontainer">
+  <text>题目：</text>
+  <input placeholder="请输入新闻标题"  name="title" maxlength="30"/>
+  </view>
+  <view class="horizon"></view>
+  <view class="area">
+  <textarea   name="textarea" maxlength="300" auto-height="true" placeholder="请输入公告内容"/>
+  <button form-type="submit">发布</button>
+  </view>
+  </form>
+</view>

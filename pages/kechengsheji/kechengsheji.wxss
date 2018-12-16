@@ -1,0 +1,69 @@
+page{
+    background-color: #f0f0f0;
+}
+.container1{
+  display: flex;
+  flex-direction: column;
+    /*居中*/
+    /*align-items: center;*/
+    font-size: 35rpx;
+    /*font-family: MicroSoft Yahei;
+    font-weight: bold;*/
+  
+} 
+.horizon {
+  width: 750rpx;
+  height: 1px;
+  position: relative;
+  background-color: black;
+}
+.title{
+   text-align: center;
+    font-family: MicroSoft Yahei;
+    font-weight: bold;
+    margin-top: 20rpx;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  /*margin-bottom: 40rpx;*/
+    background-color: #ffffff;
+  /*border-bottom: 1px solid #000000;*/
+  /*border-top: 1px solid #000000;*/
+  padding-bottom: 5px;
+  /*font-size: 26rpx;*/
+}
+.sSection{
+  margin-left: 20rpx;
+  /*font-family: MicroSoft Yahei;*/
+    font-weight: bold;
+}
+.picker{
+  /*margin-top: 20rpx;*/
+  margin-left: 40rpx;
+}
+.result{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  height: 120rpx;
+  justify-content: space-between;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+.kesheTitle{
+  font-family: MicroSoft Yahei;
+    font-weight: bold;
+    margin-left: 20rpx;
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+}
+.data{
+  margin-top: 20rpx;
+}

@@ -1,0 +1,50 @@
+<!--wxml文件是页面骨架-->
+<!--个人信息页面-->
+<view class="container1">
+  <view >
+    <view class="scontainer">
+      <text >姓名：</text>
+      <text>{{name}}</text>
+    </view>
+    <view class="scontainer">
+      <text >职位：</text>
+      <text>{{position}}</text>
+    </view>
+    <view class="scontainer">
+      <text>职称：</text>
+      <text>{{title}}</text>
+    </view>
+    <view class="scontainer">
+      <text>学历：</text>
+      <text>{{education}}</text>
+    </view>
+  </view>
+  <view >
+    <view class="scontainer">
+      <text >联系电话：</text>
+      <text>{{phone}}</text>
+    </view >
+    <view class="scontainer">
+      <text >邮箱：</text>
+      <text>{{email}}</text>
+    </view >
+  </view>
+  <view >
+    <button catchtap="e1">修改个人信息</button>
+    <button catchtap="e2">修改密码</button>
+  </view>
+  <view  hidden="{{condition}}" class="container-middle">
+    <view class="scontainer">
+      <text >联系电话：</text>
+      <input focus="true" placeholder="请在此输入新联系电话" bindinput="userPhone"/>
+    </view >
+    <view class="scontainer">
+      <text >邮箱：</text>
+      <input placeholder="请在此输入新的邮箱" bindinput="userEmail"/>
+    </view >
+    <view class="container-bottom">
+      <button class="button" catchtap="e3">确认</button>
+      <button class="button" catchtap="e4">取消</button>
+    </view>
+  </view>
+</view>

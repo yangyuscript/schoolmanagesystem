@@ -1,0 +1,46 @@
+<!--课程管理中搜索“课程信息”的界面-->
+
+<import src='../../components/storeitem/storeitem.wxml' />
+<view>
+    <!--<button bindtap="search" class="search1">搜索</button> -->
+  <view class='navbtns'>
+    <view class='navitem nearby' bindtap='navitation' data-id='01'>
+      <picker bindchange="xyear" value="{{tyear[a]}}" range="{{tyear}}">
+        <view class="picker">
+          {{tyear[a]}}
+        </view>
+      </picker>
+    </view>
+    <view class='line'></view>
+    <view class='navitem sort' bindtap='navitation' data-id='02'>
+      <picker bindchange="xterm" value="{{term[b]}}" range="{{term}}">
+        <view class="picker">
+          {{term[b]}}
+        </view>
+      </picker>
+    </view>
+    <view class='line'></view>
+    <view class='navitem rank' bindtap='navitation' data-id='03'>
+      <picker bindchange="depar" value="{{depar[c]}}" range="{{depar}}">
+        <view class="picker">
+          {{depar[c]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='wrap'>
+    <scroll-view class='scroller' style="width:{{width}}px;" scroll-y="true" lower-threshold="800" bindscrolltolower="loadmore">
+      <block wx:for='{{s}}' wx:for-item='class' wx:key='*this'>
+          <view class="class-link">
+            <navigator class="class-navigator" open-type="navigate"  url="../store/store?objectId={{class.classid}}&objectname={{class.classname}}&objectteacher={{class.classteacher}}&objectcontents{{class.classcontents}}"  hover-class="navigator-hover">
+              {{class.classname}}
+              <view class="class_description">
+              <text class="class_description_author">{{class.classteacher}}</text>
+            </view>
+          </navigator>
+          <view class="link-icon"></view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

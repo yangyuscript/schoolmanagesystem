@@ -1,0 +1,16 @@
+<!--教学大纲详细界面-->
+
+<import src='../../components/comment/comment.wxml'/>
+<view class='wrap'>
+  <view class='store'>
+      <button bindtap="down">下载{{name}}</button>
+  </view>
+  <view class='comments'>
+    <view class='conut'>在线查看</view>
+      <view class='comment'>
+        <view class='info'>
+          <view class='msg'>{{contents}}</view>
+        </view>
+      </view>
+  </view>
+</view>

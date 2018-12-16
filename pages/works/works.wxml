@@ -1,0 +1,72 @@
+
+<!--pages/works/works.wxml-->
+
+<!--工作量查询界面-->
+<view class="container1">
+  <view class="title">
+    <text>查询条件</text>
+  </view>
+
+  <!--学年选择-->
+  <view class="section">
+    <view class="sSection">学年:</view>
+    <picker bindchange="yearChange" value="{{yindex}}" range="{{yarray}}">
+      <view class="picker">
+        {{yarray[yindex]}}
+      </view>
+    </picker>
+  </view>
+
+  <!--学期选择-->
+  <view class="section">
+    <view class="sSection">学期:</view>
+    <picker bindchange="semesterChange" value="{{sindex}}" range="{{sarray}}">
+      <view class="picker">
+        {{sarray[sindex]}}
+      </view>
+    </picker>
+  </view>
+  <view>
+    <button catchtap="toResult">查询</button>
+  </view>
+
+  <!--查询结果-->
+  <view>
+    <view class="title">
+      <text>查询结果</text>
+    </view>
+
+    <!--课程的view-->
+    <view>
+      <view class="stitle">
+        <text>课程</text>
+      </view>
+    </view>
+
+    <!--课设的view-->
+    <view >
+    <view class="stitle">
+      <text>课程设计</text>
+    </view>
+    <!--<block wx:for="{{keshe_key}}" wx:for-item="item" wx:for-index="index">-->
+      <view class="result">
+        <view class="kesheTitle">
+          <text>{{item.kesheTitle}}课设的名称</text>
+        </view>
+        <view class="detail">
+          <text class="data">{{item.kesheId}}课设编号</text>
+          <text class="data">{{item.name}}课设老师姓名</text>
+        </view>
+      </view>
+    <!--</block>-->
+    </view>
+
+    <!--毕设的view-->
+  
+  <view>
+    <view class="stitle">
+      <text>毕业设计</text>
+    </view>
+    </view>
+  </view>
+</view>

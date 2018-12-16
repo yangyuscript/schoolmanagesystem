@@ -1,0 +1,29 @@
+/*注释*,app.json文件中不可以有注释*/
+.container1{
+     display: flex;
+    /*垂直*/
+    flex-direction:column;
+/*   居中
+    align-items: center;*/
+    /*margin-left: 20rpx;*/
+    font-family: MicroSoft Yahei;
+    font-weight: bold;
+}
+.scontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60rpx;
+    margin-left: 20rpx;
+}
+.container-middle{
+    margin-top: 73rpx;
+}
+.container-bottom{
+    height: 92rpx;
+    display: flex;
+    flex-direction: row; 
+    margin-top: 20rpx;
+}
+.button{
+    width: 375rpx;
+}

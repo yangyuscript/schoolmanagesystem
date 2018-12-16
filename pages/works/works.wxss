@@ -1,0 +1,62 @@
+/* pages/works/works.wxss */
+page{
+    background-color: #f0f0f0;
+}
+
+.container1{
+  display: flex;
+  flex-direction: column;
+  font-size: 35rpx; 
+} 
+.title{
+   text-align: center;
+    font-family: MicroSoft Yahei;
+    font-weight: bold;
+    margin-top: 20rpx;
+}
+.section {
+    height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  padding-bottom: 5px;
+  align-items: center;
+}
+.sSection{
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+.picker{
+  margin-left: 40rpx;
+}
+.button{
+    height: 30rpx;
+}
+.result{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  height: 120rpx;
+  justify-content: space-between;
+
+}
+.kesheTitle{
+  font-family: MicroSoft Yahei;
+    font-weight: bold;
+    margin-left: 20rpx;
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+}
+.data{
+  margin-top: 20rpx;
+}
+.stitle{
+    font-family: MicroSoft Yahei;
+    font-weight: bold;
+    margin-top: 20rpx;
+}

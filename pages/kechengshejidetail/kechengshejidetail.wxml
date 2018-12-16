@@ -1,0 +1,46 @@
+
+<!--pages/kechengshejidetail/kechengshejidetail.wxml-->
+
+<!--具体某条课程设计信息页面-->
+<view>
+  <view class="title">
+    <text>课设</text>
+    <view class="horizon"></view>
+  </view>
+  <view>
+    <view class="scontainer">
+      <text class="text">课设名称：</text>
+      <text>{{keshedata.kesheTitle}}</text>
+    </view>
+    <view class="scontainer">
+      <text class="text" >课设编号：</text>
+      <text>{{keshedata.kesheId}}</text>
+    </view>
+    <view class="scontainer">
+      <text class="text">学期：</text>
+      <text>{{keshedata.kesheSemester}}</text>
+    </view>
+    <view class="scontainer">
+      <text class="text">班级：</text>
+      <text>{{keshedata.kesheClass}}</text>
+    </view>
+  </view>
+  <view>
+    <view class="scontainer">
+      <text class="text">专业：</text>
+      <text>{{keshedata.kesheMajor}}</text>
+    </view>
+    <view class="scontainer">
+      <text class="text">教师：</text>
+      <text>{{keshedata.name}}</text>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <view class="title">
+    <text>基本描述</text>
+    <view class="horizon"></view>
+  </view>
+  <view class="content">
+  <text>{{keshedata.kesheContent}}</text>
+  </view>
+</view>

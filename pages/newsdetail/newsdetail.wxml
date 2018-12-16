@@ -1,0 +1,20 @@
+
+<!--pages/newsdetail/newsdetail.wxml-->
+
+<!--具体某条新闻内容页面-->
+<view>
+  <view class="title">
+    <text>{{newdata.tittle}}</text>
+  </view>
+  <view>
+    <view class="imgcontainer">
+      <image hidden="{{condition}}" src="/images/delete.jpg" class="deleteimg"></image>
+      <image catchtap="onReviewTap" src="/images/review.jpg" class="reviewimg"></image>
+      <image src="/images/share.jpg" class="shareimg" catchtap="onShareTap"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <view class="content">
+  <text>{{newdata.content}}</text>
+  </view> 
+</view>

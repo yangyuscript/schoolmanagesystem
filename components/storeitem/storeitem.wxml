@@ -1,0 +1,12 @@
+<template name='store'>
+     <view class='store' bindtap='storelick'>
+          <view class='info'>
+            <view class='name'>{{class.classname}}</view>
+            <view class='type_km'>
+              <navigator url="../store/store?objectId='+{{class.id}}">
+      </navigator>
+              <view>{{class.classteacher}}</view>
+            </view>
+          </view>
+        </view>
+        </template>
