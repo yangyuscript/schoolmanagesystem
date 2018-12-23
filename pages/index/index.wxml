@@ -1,24 +1,26 @@
 <view class="page">
   <view class="page__bd page__bd_spacing">
-    <view class="weui-flex">
+    <view class="weui-flex" style="margin-top:10px;margin-bottom:-23px;">
       <view class="weui-flex__item">
         <navigator url='../courseTable/courseTable' hover-class='none'>
           <view class="top-tab">
-            <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+            <image class="weui-grid__icon" src="../../images/course_plan.png" />
             <view class="weui-grid__label">周课表</view>
           </view>
         </navigator>
       </view>
       <view class="weui-flex__item">
-        <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+        <navigator url="../checkScore/checkScore">
+          <view class="top-tab">
+          <image class="weui-grid__icon" src="../../images/search_score.png" />
           <view class="weui-grid__label">成绩查询</view>
         </view>
+        </navigator>
       </view>
       <view class="weui-flex__item">
         <navigator url="../notice/notice" hover-class="none">
           <view class="top-tab">
-            <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+            <image class="weui-grid__icon" src="../../images/messages.png" />
             <view class="weui-grid__label">通知信息</view>
           </view>
         </navigator>
@@ -27,7 +29,7 @@
       <view class="weui-flex__item">
         <navigator url='../notice/notice' hover-class='none'>
           <view class="top-tab">
-            <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+            <image class="weui-grid__icon" src="../../images/news.png" />
             <view class="weui-grid__label">新闻公告</view>
           </view>
         </navigator>
@@ -35,46 +37,88 @@
     </view>
     <view class="weui-flex">
       <view class="weui-flex__item">
-        <view class="placeholder">今日课表</view>
+        <view class="title_moudle">今日课表</view>
       </view>
     </view>
     <view class="weui-flex">
       <view class="weui-flex__item">
-        <view class="placeholder">weui</view>
-      </view>
-      <view class="weui-flex__item">
-        <view class="placeholder">weui</view>
+        <view class="placeholder course">高等数学3 教一 503 8:00-8:45</view>
       </view>
     </view>
     <view class="weui-flex">
       <view class="weui-flex__item">
-        <view bindtap="checkThisWeekCourses" class="placeholder">查看本周课程 </view>
+        <view class="placeholder course">高等数学3 教一 503 13:00-13:45</view>
       </view>
     </view>
     <view class="weui-flex">
       <view class="weui-flex__item">
-        <view class="placeholder">今日公告</view>
+        <view class="placeholder course">高等数学3 教一 503 8:00-8:45</view>
       </view>
     </view>
     <view class="weui-flex">
       <view class="weui-flex__item">
-        <view class="placeholder">weui</view>
-      </view>
-      <view class="weui-flex__item">
-        <view class="placeholder">weui</view>
-      </view>
-      <view class="weui-flex__item">
-        <view class="placeholder">weui</view>
+        <view class="title_moudle">今日公告</view>
       </view>
     </view>
     <view class="weui-flex">
       <view class="weui-flex__item">
-        <view bindtap='checkAllNotices' class="placeholder">查看全部公告</view>
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">文字来源</view>
+                        <view class="weui-media-box__info__meta">时间</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+                    </view>
+                </view>
+            </view>
+        </view>
       </view>
     </view>
     <view class="weui-flex">
       <view class="weui-flex__item">
-        <view class="placeholder">教务管理</view>
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">文字来源</view>
+                        <view class="weui-media-box__info__meta">时间</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">文字来源</view>
+                        <view class="weui-media-box__info__meta">时间</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view bindtap='checkAllNotices' class="placeholder">查看更多</view>
+      </view>
+    </view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view class="title_moudle">教务管理</view>
       </view>
     </view>
     <view class="weui-flex">
@@ -82,55 +126,62 @@
       <view class="weui-flex__item">
         <navigator url="../storelist/storelist" hover-class="none">
           <view class="top-tab">
-            <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+            <image class="weui-grid__icon" src="../../images/mycourse.png" />
             <view class="weui-grid__label">我的课程</view>
           </view>
         </navigator>
       </view>
 
       <view class="weui-flex__item">
+        <navigator url="../storelist/storelist" hover-class="none">
         <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+          <image class="weui-grid__icon" src="../../images/exam.png" />
           <view class="weui-grid__label">考试查询</view>
         </view>
+        </navigator>
       </view>
       <view class="weui-flex__item">
-        <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
-          <view class="weui-grid__label">自主选课</view>
+        <navigator url="../schooldate/schooldate">
+          <view class="top-tab">
+          <image class="weui-grid__icon" src="../../images/schooldate.png" />
+          <view class="weui-grid__label">学校校历</view>
         </view>
+        </navigator>
+        
       </view>
       <view class="weui-flex__item">
         <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+          <image class="weui-grid__icon" src="../../images/classroom.png" />
           <view class="weui-grid__label">空教室</view>
         </view>
       </view>
     </view>
-    <view class="weui-flex">
+    <view class="weui-flex" style="margin-top:10px;">
       <view class="weui-flex__item">
         <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+          <image class="weui-grid__icon" src="../../images/mycourse.png" />
           <view class="weui-grid__label">周课表</view>
         </view>
       </view>
       <view class="weui-flex__item">
         <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+          <image class="weui-grid__icon" src="../../images/mycourse.png" />
           <view class="weui-grid__label">周课表</view>
         </view>
       </view>
       <view class="weui-flex__item">
         <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+          <image class="weui-grid__icon" src="../../images/mycourse.png" />
           <view class="weui-grid__label">周课表</view>
         </view>
       </view>
       <view class="weui-flex__item">
-        <view class="top-tab">
-          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+        <navigator url="">
+          <view class="top-tab">
+          <image class="weui-grid__icon" src="../../images/mycourse.png" />
           <view class="weui-grid__label">周课表</view>
         </view>
+        </navigator>
       </view>
     </view>
   </view>

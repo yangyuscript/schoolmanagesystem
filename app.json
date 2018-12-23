@@ -28,7 +28,10 @@
     "pages/bishe/bishe",
     "pages/regist/regist",
     "pages/courseTable/courseTable",
-    "pages/notice/notice"
+    "pages/notice/notice",
+    "pages/schooldate/schooldate",
+    "pages/checkScore/checkScore",
+    "pages/personCenter/personCenter"
   ],
   "window": {
     "navigationBarBackgroundColor": "#92319A",
@@ -39,14 +42,19 @@
     "enablePullDownRefresh": false
   },
   "tabBar": {
+    "selectedColor": "#92319A",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "images/index_t.png",
+        "selectedIconPath": "images/index.png"
       },
       {
-        "pagePath": "pages/personal/personal",
-        "text": "个人"
+        "pagePath": "pages/personCenter/personCenter",
+        "text": "个人",
+        "iconPath": "images/person_t.png",
+        "selectedIconPath": "images/person.png"
       }
     ]
   },

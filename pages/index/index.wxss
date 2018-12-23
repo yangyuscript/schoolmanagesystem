@@ -8,10 +8,23 @@
     line-height: 2.3em;
     color: #cfcfcf;
 }
+
+.course{
+  background-color: #92319A;
+  color:white;
+}
+
 .top-tab{
   
 }
 .weui-grid__label{
   font-size:10px;
   color:#92319A;
+}
+
+.title_moudle{
+  border-left: 6px #92319A solid;
+  margin:10px auto;
+  color:#92319A;
+  font-size:0.8rem;
 }
