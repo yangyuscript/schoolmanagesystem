@@ -1,17 +1,17 @@
 <!--登陆界面-->
 
-<view class="container" style="height:100%;background-color:white;">
+<view class="container" style="height:100%;background-color:white;padding-top:11%;">
   <image src="/images/logo.png" style="width:80%;height:16%;margin-left:10px;margin-top:20px;"></image>
   <view class="" style="padding:5%;margin-top:-51px;">
     <view class="usermotto">
       <view class="cp-input">
         <view>
           <image src="/images/sno.png" class="loginicon" style="float:left"></image>
-          <input type="text" bindinput="studentID" placeholder="请输入学号" />
+          <input type="text" bindinput="studentID" placeholder="请输入学号" style="height:30px;text-align:center;"/>
         </view>
         <view>
           <image src="/images/pasw.png" class="loginicon" style="float:left"></image>
-          <input type="text" bindinput="classID" password="true" placeholder="请输入密码" />
+          <input type="text" bindinput="passwordID" password="true" placeholder="请输入密码" style="height:30px;text-align:center;"/>
         </view>
         <button bindtap="login" style='background-color:#92319A'>登 录</button>
         <view style="margin-top:25px;margin-bottom:25px;font-size:10px;float:right;">
