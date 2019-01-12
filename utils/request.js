@@ -13,15 +13,15 @@ var requestHandler = {
 
 //GET请求
 function GET(controlPath, requestHandler) {
-  request('GET', controlPath, requestHandler)
+  request('GET', controlPath, requestHandler, 'application/json')
 }
 
 //POST请求
 function POST(controlPath, requestHandler) {
-  request('POST', controlPath, requestHandler)
+  request('POST', controlPath, requestHandler,'application/x-www-form-urlencoded')
 }
 
-function request(method, controlPath, requestHandler) {
+function request(method, controlPath, requestHandler,header) {
   //注意，可以对params加密等处理
   var params = requestHandler.params;
 
@@ -30,8 +30,7 @@ function request(method, controlPath, requestHandler) {
     data: params,
     method: method,//OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
     header: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "x-access-token": wx.getStorageSync('token')
+      "Content-Type": header
     },//设置请求头
     success: function (res) {
       requestHandler.success(res)

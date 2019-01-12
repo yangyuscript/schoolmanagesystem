@@ -17,7 +17,6 @@ Page({
 
   },
   login: function() {
-    console.log("what the fuck")
     var $that = this
     request.GET('/index/login', {
       params: {
