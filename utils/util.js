@@ -34,7 +34,20 @@ function formatString(str, replacements) {
     });
 }
 
+function getXq(date) {
+  var year = date.getFullYear()
+  var month = date.getMonth() + 1
+  if (month >= 7 && month <= 12) {
+    return String(year).substring(2) + '-' + String(year+1).substring(2) + '-1'
+  } else if(month <2){
+    return String(year - 1).substring(2) + '-' + String(year).substring(2) + '-1'
+  }else{
+    return String(year-1).substring(2) + '-' + String(year).substring(2) + '-2'
+  }
+}
+
 module.exports = {
     trimString: trimString,
-    formatString: formatString
+    formatString: formatString,
+    getXq: getXq
 };

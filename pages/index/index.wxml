@@ -40,19 +40,14 @@
         <view class="title_moudle">今日课表</view>
       </view>
     </view>
-    <view class="weui-flex">
+    <view class="weui-flex" wx:for="{{todayCourses}}">
       <view class="weui-flex__item">
-        <view class="placeholder course">高等数学3 教一 503 8:00-8:45</view>
-      </view>
-    </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <view class="placeholder course">高等数学3 教一 503 13:00-13:45</view>
-      </view>
-    </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <view class="placeholder course">高等数学3 教一 503 8:00-8:45</view>
+       <view wx:if="{{item.skjc!=null}}">
+        <view class="placeholder course">{{item.kcmc}} {{item.skjc}},{{item.skjc}}节</view>
+       </view>
+       <view wx:else>
+        <view class="placeholder course">{{item.kcmc}}</view>
+       </view>
       </view>
     </view>
     <view class="weui-flex">

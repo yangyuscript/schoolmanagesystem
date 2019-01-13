@@ -14,7 +14,17 @@ Page({
     this.data.password = e.detail.value
   },
   onLoad: function(options) {
-
+    try {
+      const userName = wx.getStorageSync('userName')
+      const password = wx.getStorageSync('password')
+      if (userName != null && password != null && userName!='' && password!='') {
+        wx.switchTab({
+          url: '../index/index',
+        })
+      }
+    } catch (e) {
+      console.log('local cache not has userName and password!')
+    }
   },
   login: function() {
     var $that = this
@@ -35,6 +45,10 @@ Page({
             wx.setStorage({
               key: 'password',
               data: $that.data.password,
+            })
+            wx.setStorage({
+              key: 'bh',
+              data: $that.data.userName.substring(0,8),
             })
             wx.switchTab({
               url: '../index/index',

@@ -1,5 +1,6 @@
 // pages/index/index.js
 var request = require('../../utils/request.js')
+var dateUtil = require('../../utils/util.js')
 Page({
 
   /**
@@ -8,7 +9,8 @@ Page({
   data: {
     grids: [0, 1, 2, 3],
     todayCourseTable: [],
-    notices: []
+    notices: [],
+    todayCourses: [{kcmc:'今日没有课程要上哦'}]
   },
 
   /**
@@ -60,25 +62,30 @@ Page({
     var $that = this
     var $userName = wx.getStorageSync('userName')
     var $password = wx.getStorageSync('password')
+    var $bh = wx.getStorageSync('bh')
+    var $xq = dateUtil.getXq(new Date())
     
-    console.log($userName,$password,"fuck you")
+    console.log($userName,$password)
     request.GET('/index/initIndex', {
       params: {
         userName: $userName,
-        password: $password
+        password: $password,
+        bh: $bh,
+        xq: $xq
       },
       success: function (res) {
         if (res.data.result != null) {
           if (res.data.result != 'no') {
-            wx.setStorage({
-              key: 'student_bh',
-              data: res.data.studentInfo.bh,
-            })
             if(res.data.notices != null){
               $that.setData({
                 notices: res.data.notices
               })
               //$that.data.notices = res.data.notices
+            }
+            if (res.data.todayCourses.length>0) {
+              $that.setData({
+                todayCourses: res.data.todayCourses
+              })
             }
           } else {
             console.log('登录失败！')
