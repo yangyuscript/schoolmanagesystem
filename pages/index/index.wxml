@@ -43,7 +43,7 @@
     <view class="weui-flex" wx:for="{{todayCourses}}">
       <view class="weui-flex__item">
        <view wx:if="{{item.skjc!=null}}">
-        <view class="placeholder course">{{item.kcmc}} {{item.skjc}},{{item.skjc}}节</view>
+        <view class="placeholder course">{{item.kcmc}} {{item.skjc}},{{item.skjc+1}}节</view>
        </view>
        <view wx:else>
         <view class="placeholder course">{{item.kcmc}}</view>

@@ -122,10 +122,14 @@ Page({
     var $that = this
     var $bh = wx.getStorageSync('bh')
     var $xq = dateUtil.getXq(new Date())
+    var $userName = wx.getStorageSync('userName')
+    var $password = wx.getStorageSync('password')
 
     console.log($bh, $xq)
     request.GET('/index/courseTable', {
       params: {
+        userName: $userName,
+        password: $password,
         bh: $bh,
         xq: $xq
       },
