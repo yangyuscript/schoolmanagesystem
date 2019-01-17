@@ -57,7 +57,11 @@
     </view>
     <!--公告-->
     <view class="weui-flex" wx:for="{{notices}}">
-      <view class="weui-flex__item">
+    <navigator
+    url="/page/navigate/navigate?title=navigate"
+    hover-class="navigator-hover"
+  >
+      <view class="weui-flex__item" >
         <view class="weui-panel">
             <view class="weui-panel__bd">
                 <view class="weui-media-box weui-media-box_text">
@@ -72,6 +76,7 @@
             </view>
         </view>
       </view>
+      </navigator>
     </view>
     <!--公告结束-->
     
