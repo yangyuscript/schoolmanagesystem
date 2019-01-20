@@ -1,5 +1,6 @@
 /**app.wxss**/
 @import 'style/weui.wxss';
+@import 'wxParse/wxParse.wxss';
 input{
   border:1px solid #92319A;
 }

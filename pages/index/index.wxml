@@ -57,10 +57,7 @@
     </view>
     <!--公告-->
     <view class="weui-flex" wx:for="{{notices}}">
-    <navigator
-    url="/page/navigate/navigate?title=navigate"
-    hover-class="navigator-hover"
-  >
+    <navigator url="/pages/details/details" bindtap='currArticleContent' data-content='{{item.content}}' data-title='{{item.title}}' data-time='{{item.time}}' hover-class="navigator-hover">
       <view class="weui-flex__item" >
         <view class="weui-panel">
             <view class="weui-panel__bd">

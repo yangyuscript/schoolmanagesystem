@@ -121,4 +121,11 @@ Page({
     this.initData()
     wx.stopPullDownRefresh()
   },
+  currArticleContent: function(e){
+    console.log('查看的公告点击事件属性'+e)
+    console.log(e)
+    wx.setStorageSync('curArticleContent', e.currentTarget.dataset.content)
+    wx.setStorageSync('curArticleTitle', e.currentTarget.dataset.title)
+    wx.setStorageSync('curArticleTime', e.currentTarget.dataset.time)
+  }
 })

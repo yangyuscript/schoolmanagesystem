@@ -1,5 +1,5 @@
 /* pages/details/details.wxss */
-
+@import "../../wxParse/wxParse.wxss";
 .container{
     width:100%;
     min-height: 5000rpx;

@@ -10,7 +10,8 @@
     "pages/notice/notice",
     "pages/schooldate/schooldate",
     "pages/checkScore/checkScore",
-    "pages/personCenter/personCenter"
+    "pages/personCenter/personCenter",
+    "pages/details/details"
   ],
   "window": {
     "navigationBarBackgroundColor": "#92319A",
