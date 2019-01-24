@@ -99,7 +99,7 @@
       </view>
 
       <view class="weui-flex__item">
-        <navigator url="../storelist/storelist" hover-class="none">
+        <navigator url="../examSetting/examSetting" hover-class="none">
         <view class="top-tab">
           <image class="weui-grid__icon" src="../../images/exam.png" />
           <view class="weui-grid__label">考试查询</view>

@@ -1,5 +1,3 @@
-<!--课程管理中搜索“课程信息”的界面-->
-
 <import src='../../components/storeitem/storeitem.wxml' />
 <view>
     <!--<button bindtap="search" class="search1">搜索</button> -->

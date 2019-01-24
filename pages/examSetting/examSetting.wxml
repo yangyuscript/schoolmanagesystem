@@ -1,0 +1,30 @@
+<!--pages/examSetting/examSetting.wxml-->
+<view>
+  <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{radioItems}}">
+    <radio value="{{item.value}}" checked="{{item.checked}}" />
+    {{item.name}}
+  </label>
+</radio-group>
+  <!--成绩表格-->
+  <view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr header">
+        <view class="th th3">课程代码</view>
+        <view class="th th3">课程名称</view>
+        <view class="th th3">考试时间</view>
+        <view class="th th3">考试地点</view>
+        <view class="th th3">监考老师</view>
+      </view>
+      <view class="tr content" wx:for="{{exams}}">
+        <view class="tr">
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.courseCode}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.courseName}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.examTime}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.examAddress}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.monitorOne}},{{item.monitorTwo}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

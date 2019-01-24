@@ -11,7 +11,9 @@
     "pages/schooldate/schooldate",
     "pages/checkScore/checkScore",
     "pages/personCenter/personCenter",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/examSetting",
+    "pages/examSetting/examSetting"
   ],
   "window": {
     "navigationBarBackgroundColor": "#92319A",

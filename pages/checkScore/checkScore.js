@@ -1,11 +1,12 @@
 // pages/checkScore/checkScore.js
 var request = require('../../utils/request.js')
-var app = getApp();
+var app = getApp()
 Page({
   data: {
     term: ['全部学期', '第1学期', '第2学期', '第3学期', '第4学期', '第5学期', '第6学期', '第7学期', '第8学期'],
     termIndex: 0,
     onePartScores: []
+    
   },
   onLoad: function (options) {
     this.initData()
