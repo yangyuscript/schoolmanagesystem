@@ -1,13 +1,14 @@
-// pages/notice/notice.js
+// pages/levelTest/levelTest.js
 var request = require('../../utils/request.js')
 var dateUtil = require('../../utils/util.js')
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    notices: []
+    levelTests: []
   },
 
   /**
@@ -22,7 +23,7 @@ Page({
     var $password = wx.getStorageSync('password')
     var $bh = wx.getStorageSync('bh')
     var $xq = dateUtil.getXq(new Date())
-    request.GET('/index/notices', {
+    request.GET('/index/levelTest', {
       params: {
         userName: $userName,
         password: $password
@@ -31,10 +32,10 @@ Page({
         if (true) {
           if (true) {
             $that.setData({
-              notices: res.data.notices
+              levelTests: res.data.levelTests
             })
           } else {
-            console.log('获取公告信息失败！')
+            console.log('获取等级考试信息失败！')
             wx.showToast({
               title: '身份校验有误，请下拉刷新重试',
               icon: 'none',
@@ -60,14 +61,6 @@ Page({
       }
     })
   },
-  currArticleContent: function (e) {
-    console.log('查看的公告点击事件属性' + e)
-    console.log(e)
-    wx.setStorageSync('curArticleContent', e.currentTarget.dataset.content)
-    wx.setStorageSync('curArticleTitle', e.currentTarget.dataset.title)
-    wx.setStorageSync('curArticleTime', e.currentTarget.dataset.time)
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

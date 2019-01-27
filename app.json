@@ -12,8 +12,9 @@
     "pages/checkScore/checkScore",
     "pages/personCenter/personCenter",
     "pages/details/details",
-    "pages/examSetting",
-    "pages/examSetting/examSetting"
+    "pages/examSetting/examSetting",
+    "pages/myCourses/myCourses",
+    "pages/levelTest/levelTest"
   ],
   "window": {
     "navigationBarBackgroundColor": "#92319A",

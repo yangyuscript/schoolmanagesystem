@@ -1,0 +1,31 @@
+<!--pages/levelTest/levelTest.wxml-->
+<view>
+  <!--表格-->
+  <view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr header">
+        <view class="th th3">学号</view>
+        <view class="th th3">考生姓名</view>
+        <view class="th th3">考试时间</view>
+        <view class="th th3">考核方式</view>
+        <view class="th th3">语种代码</view>
+        <view class="th th3">语种名称</view>
+        <view class="th th3">准考 证号</view>
+        <view class="th th3">考试成绩</view>
+      </view>
+      <view class="tr content" wx:for="{{levelTests}}">
+        <view class="tr">
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.xh}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.xm}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.ksny}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.yzdm}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.yzmc}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.zkzhm}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.kscj}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
