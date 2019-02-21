@@ -13,36 +13,113 @@
         <view class="weui-cell__hd">
           <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
         </view>
-        <view class="weui-cell__bd">头像</view>
-        <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+        <view class="weui-cell__bd">班级编号</view>
+        <view class="weui-cell__ft">{{sinfo.bh}}</view>
       </navigator>
       <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
         <view class="weui-cell__hd">
           <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
         </view>
-        <view class="weui-cell__bd">学号</view>
-        <view class="weui-cell__ft weui-cell__ft_in-access">101203938</view>
+        <view class="weui-cell__bd">班级名称</view>
+        <view class="weui-cell__ft">{{sinfo.bj}}</view>
       </navigator>
       <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
         <view class="weui-cell__hd">
           <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
         </view>
-        <view class="weui-cell__bd">姓名</view>
-        <view class="weui-cell__ft weui-cell__ft_in-access">张三</view>
+        <view class="weui-cell__bd">学生学号</view>
+        <view class="weui-cell__ft">{{sinfo.xh}}</view>
       </navigator>
       <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
         <view class="weui-cell__hd">
           <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
         </view>
-        <view class="weui-cell__bd">班级</view>
-        <view class="weui-cell__ft weui-cell__ft_in-access">软件1212</view>
+        <view class="weui-cell__bd">学生姓名</view>
+        <view class="weui-cell__ft">{{sinfo.xm}}</view>
       </navigator>
       <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
         <view class="weui-cell__hd">
           <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
         </view>
-        <view class="weui-cell__bd">院系</view>
-        <view class="weui-cell__ft weui-cell__ft_in-access">软件学院</view>
+        <view class="weui-cell__bd">性别</view>
+        <view class="weui-cell__ft">{{sinfo.xb}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">出生日期</view>
+        <view class="weui-cell__ft">{{sinfo.csrq}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">学制</view>
+        <view class="weui-cell__ft">{{sinfo.xz}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">院系名称</view>
+        <view class="weui-cell__ft">{{sinfo.yxmc}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">专业名称</view>
+        <view class="weui-cell__ft">{{sinfo.zymc}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">专业代码</view>
+        <view class="weui-cell__ft">{{sinfo.zydm}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">民族</view>
+        <view class="weui-cell__ft">{{sinfo.mz}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">生源类别</view>
+        <view class="weui-cell__ft">{{sinfo.sylb}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">身份证号</view>
+        <view class="weui-cell__ft">{{sinfo.sfzh}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">年级</view>
+        <view class="weui-cell__ft">{{sinfo.nj}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">政治面貌</view>
+        <view class="weui-cell__ft">{{sinfo.zzmm}}</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/share.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">入学日期</view>
+        <view class="weui-cell__ft">{{sinfo.rxrq}}</view>
       </navigator>
     </view>
   </view>
