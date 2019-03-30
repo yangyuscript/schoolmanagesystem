@@ -7,7 +7,12 @@ Page({
   data: {
 
   },
-
+  imgYu: function(event){
+    wx.previewImage({
+      current: 'http://www.nustti.edu.cn/ueditor/php/upload/image/20190216/1550281719898675.png', // 当前显示图片的http链接
+      urls: ['http://www.nustti.edu.cn/ueditor/php/upload/image/20190216/1550281719898675.png'] // 需要预览的图片http链接列表
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

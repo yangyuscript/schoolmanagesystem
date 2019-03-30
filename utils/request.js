@@ -1,5 +1,5 @@
-var API_URL = 'http://lingx.free.idcfengye.com'
-//var API_URL = 'https://sharebooks.yangyuscript.club/api/'
+//var API_URL = 'http://47.101.47.88:8081/sm'
+var API_URL = 'http://lingx.free.idcfengye.com/sm'
 
 var requestHandler = {
   params: {},

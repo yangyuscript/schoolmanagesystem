@@ -14,7 +14,8 @@
     "pages/details/details",
     "pages/examSetting/examSetting",
     "pages/myCourses/myCourses",
-    "pages/levelTest/levelTest"
+    "pages/levelTest/levelTest",
+    "pages/commonCourse/commonCourse"
   ],
   "window": {
     "navigationBarBackgroundColor": "#92319A",

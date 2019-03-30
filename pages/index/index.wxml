@@ -113,21 +113,30 @@
           <view class="weui-grid__label">学校校历</view>
         </view>
         </navigator>
-        
       </view>
       <view class="weui-flex__item">
+      <navigator url="../commonCourse/commonCourse">
+        <view class="top-tab">
+          <image class="weui-grid__icon" src="../../images/mycourse.png" />
+          <view class="weui-grid__label">我的公共课</view>
+        </view>
+      </navigator>
+      </view>
+      <!-- <view class="weui-flex__item">
         <view class="top-tab">
           <image class="weui-grid__icon" src="../../images/classroom.png" />
           <view class="weui-grid__label">空教室</view>
         </view>
-      </view>
+      </view> -->
     </view>
     <view class="weui-flex" style="margin-top:10px;">
-      <view class="weui-flex__item">
+      <!-- <view class="weui-flex__item">
+      <navigator url="../commonCourse/commonCourse">
         <view class="top-tab">
           <image class="weui-grid__icon" src="../../images/mycourse.png" />
-          <view class="weui-grid__label">周课表</view>
+          <view class="weui-grid__label">我的公共课</view>
         </view>
+      </navigator>
       </view>
       <view class="weui-flex__item">
         <view class="top-tab">
@@ -148,7 +157,7 @@
           <view class="weui-grid__label">周课表</view>
         </view>
         </navigator>
-      </view>
+      </view> -->
     </view>
   </view>
 </view>

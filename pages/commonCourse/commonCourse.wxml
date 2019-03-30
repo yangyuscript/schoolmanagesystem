@@ -1,0 +1,29 @@
+<!--pages/commonCourse/commonCourse.wxml-->
+<!--pages/myCourses/myCourses.wxml-->
+<view>
+  <!--表格-->
+  <view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr header">
+        <view class="th th3">学期</view>
+        <view class="th th3">课程代码</view>
+        <view class="th th3">课程名称</view>
+        <view class="th th3">课程类别</view>
+        <view class="th th3">学分</view>
+        <view class="th th3">上课教师</view>
+        <view class="th th3">上课时间</view>
+      </view>
+      <view class="tr content" wx:for="{{courses}}">
+        <view class="tr">
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.xq}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.kcdm}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.kcmc}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.kclb}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.xf}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.skjs}}</view>
+          <view class="th th3" style="background-color:white;color:#92319A;">{{item.sksj}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

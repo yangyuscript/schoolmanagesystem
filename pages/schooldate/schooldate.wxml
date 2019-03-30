@@ -1,2 +1,2 @@
 <!--pages/schooldate/schooldate.wxml-->
-<image style="" src="../../images/schooldate.png" mode="aspectFill"></image>
+<image style="" bindtap="imgYu" src="http://www.nustti.edu.cn/ueditor/php/upload/image/20190216/1550281719898675.png" mode="aspectFill"></image>
